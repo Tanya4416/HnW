@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">HnM</string>
+
+    <string-array name="nearby_gyms">
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+        <item> GYM A</item>
+
+    </string-array>
+
+
+    <string name="ustrasan">Benefits of Camel Pose:
+Reduces fat on thighs.
+Opens up the hips, stretching deep hip flexors.
+Stretches and strengthens the shoulders and back.
+Expands the abdominal region, improving digestion and elimination.
+</string>
+
+    <string name="chakrasan">
+        Benefits of snake pose:
+Strengthens your spine
+Stimulates abdominal organs
+Reduces belly fat
+Manage stress
+Improves circulation
+</string>
+    <string name="bhujangaasan">
+      Benefits of Chakrasana:
+Strengthens liver, pancreas and kidneys.
+Excellent for heart.
+Good for infertility, asthma and osteoporosis.
+Strengthens arms, shoulders, hands, wrists and legs.
+Stretches the chest and lungs.
+Strengthens the arms and wrists, legs.
+</string>
+     <string name="suryanamaskar">
+      benefits of sn:
+Helps lose weight
+Helps strengthen muscles and joints
+Gives glowing skin
+Ensures a better functioning digestive system
+</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+</resources>
