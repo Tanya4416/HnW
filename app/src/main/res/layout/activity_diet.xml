@@ -15,23 +15,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <EditText
+            android:id="@+id/height"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:hint="Height"
-            android:textSize="20dp"
-            android:id="@+id/height"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:hint="Height cm"
+            android:textSize="20dp" />
 
         <EditText
+            android:id="@+id/weight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Weight"
-            android:textSize="20dp"
-            android:id="@+id/weight"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:hint="Weight Kg"
+            android:textSize="20dp" />
     </LinearLayout>
 
 
@@ -69,6 +70,9 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_marginTop="20dp"
+        android:background="#26a69a"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
         android:id="@+id/button"
         android:text="Calculate"/>
 
@@ -77,7 +81,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:id="@+id/bmi"
+        android:textStyle="bold"
+        android:textSize="25dp"
         android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imv"/>
 
 
 </LinearLayout>

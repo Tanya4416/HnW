@@ -30,6 +30,8 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+
+                android:layout_marginTop="10dp"
                 android:id="@+id/card_view2"
                 >
 
@@ -39,6 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:alpha="0.75"
+                    android:scaleType="fitXY"
                     android:src="@drawable/ustrasan2"
                     android:id="@+id/person_image"
                     />
@@ -88,7 +91,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:id="@+id/card_view3"
+                android:layout_marginTop="10dp"                android:id="@+id/card_view3"
                 >
 
 
@@ -97,6 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:alpha="0.75"
+                    android:scaleType="fitXY"
                     android:src="@drawable/chakrasan"
                     android:id="@+id/person_image"
                     />
@@ -147,6 +151,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_marginTop="10dp"
                 android:id="@+id/card_view4"
                 >
 
@@ -156,6 +161,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:alpha="0.75"
+                    android:scaleType="fitXY"
                     android:src="@drawable/bhujangaasan"
                     android:id="@+id/person_image"
                     />
@@ -206,6 +212,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_marginTop="10dp"
                 android:id="@+id/card_view5"
                 >
 
@@ -215,6 +222,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:alpha="0.75"
+                    android:scaleType="fitXY"
                     android:src="@drawable/suryanamaskar"
                     android:id="@+id/person_image"
                     />
@@ -262,6 +270,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_marginTop="10dp"
                 android:paddingTop="10dp"
                 android:id="@+id/card_view6"
                 >
@@ -272,6 +281,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:alpha="0.75"
+                    android:scaleType="fitXY"
                     android:src="@drawable/ustrasan"
                     android:id="@+id/person_image"
                     />
@@ -319,6 +329,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_marginTop="10dp"
                 android:id="@+id/card_view7"
                 >
 
@@ -329,6 +340,7 @@
                     android:layout_height="match_parent"
                     android:alpha="0.75"
                     android:src="@drawable/aasan3"
+                    android:scaleType="fitXY"
                     android:id="@+id/person_image"
                     />
 

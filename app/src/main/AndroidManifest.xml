@@ -24,6 +24,7 @@
         <activity android:name=".gym" />
         <activity android:name=".yoga" />
         <activity android:name=".profile"></activity>
+
     </application>
 
 </manifest>

@@ -6,6 +6,7 @@ package com.example.shujareshi.hnm;
         import android.view.inputmethod.InputMethodManager;
         import android.widget.Button;
         import android.widget.EditText;
+        import android.widget.ImageView;
         import android.widget.RadioButton;
         import android.widget.RadioGroup;
         import android.widget.TextView;
@@ -20,6 +21,7 @@ public class diet extends AppCompatActivity {
     private TextView tv;
     private RadioButton radioSexButton;
     private Button btnDisplay;
+    private ImageView imv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,23 +32,32 @@ public class diet extends AppCompatActivity {
         tv=(TextView)findViewById(R.id.bmi);
         height=(EditText)findViewById(R.id.height);
         btnDisplay=(Button)findViewById(R.id.button);
+        imv=(ImageView)findViewById(R.id.imv);
         //radioSexGroup=(RadioGroup)findViewById(R.id.radiogroup);
         //int selectedId=radioSexGroup.getCheckedRadioButtonId();
         //radioSexButton=(RadioButton)findViewById(selectedId);
         btnDisplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                float h=Float.valueOf(height.getText().toString());
-                float w=Float.valueOf(weight.getText().toString());
-                //String s = radioSexButton.getText().toString();
+                if(validate()) {
+                    float h = Float.valueOf(height.getText().toString());
+                    float w = Float.valueOf(weight.getText().toString());
+                    //String s = radioSexButton.getText().toString();
 
-                float bmi=calc(w,h);
-                try  {
-                    InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
-                    imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-                } catch (Exception e) {
+                    float bmi = calc(w, h);
+                    try {
+                        InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+                    } catch (Exception e) {
 
+                    }
+                    imv.setBackgroundResource(R.drawable.bmi);
                 }
+                else
+                {
+                    return ;
+                }
+
 
 
             }
@@ -57,12 +68,36 @@ public class diet extends AppCompatActivity {
     public float calc(float w, float h)
     {
         float j;
-        h=h/100;
+        h=h/(float)100;
         float k=(h*h);
         j=w/k;
         tv.setText(String.valueOf(j));
         return j;
 
 
+    }
+    public boolean validate() {
+        boolean valid = true;
+
+        String w = weight.getText().toString();
+        String h = height.getText().toString();
+
+
+        if (w.isEmpty() || weight.length() >3) {
+            weight.setError("in valid");
+            valid = false;
+        } else {
+            weight.setError(null);
+        }
+
+
+        if (h.isEmpty() || height.length() > 3 || height.length() < 1) {
+            height.setError("invalid");
+            valid = false;
+        } else {
+            height.setError(null);
+        }
+
+        return valid;
     }
 }
